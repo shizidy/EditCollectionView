@@ -10,18 +10,22 @@
 #define rowMargin 10
 #define columnMargin 10
 #define sectionEdgeInsets UIEdgeInsetsMake(10, 10, 10, 10)
+
 @interface PopCollectionView ()<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>{
     NSInteger startSection;
     NSInteger endSection;
     NSInteger startItem;
     NSInteger endItem;
 }
+
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) UILongPressGestureRecognizer *longPressGesture;
 @property (nonatomic, strong) NSMutableArray *selectedArr;
 @property (nonatomic, strong) NSMutableArray *unselectedArr;
 @end
+
 @implementation PopCollectionView
+
 -(instancetype)initWithFrame:(CGRect)frame selectedArray:(NSArray *)selectedArr unselectedArray:(NSArray *)unselectedArr{
     if (self = [super initWithFrame:frame]) {
         [self initData];//初始化数据
