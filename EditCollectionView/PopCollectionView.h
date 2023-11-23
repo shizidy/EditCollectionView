@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PopCollectionView : UIView
--(instancetype)initWithFrame:(CGRect)frame selectedArray:(NSArray *)selectedArr unselectedArray:(NSArray *)unselectedArr;
+- (instancetype)initWithFrame:(CGRect)frame selectedArray:(NSArray *)selectedArr unselectedArray:(NSArray *)unselectedArr;
 @end
